@@ -23,7 +23,7 @@ distanceInKilo = distanceInMiles * KILO_PER_MILE
 print("Distance in Kilometers: ", distanceInKilo)
 
 # Distance in Astronomical Units (AU)
-distanceInAU = distanceInMiles / Miles_PER_AU
+distanceInAU = distanceInMiles / Miles_PER_AU 
 print("Distance in AUs: ", distanceInAU)
 
 # Time for Round Trip radio communication in hours 
