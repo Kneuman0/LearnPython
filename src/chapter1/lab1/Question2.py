@@ -28,7 +28,7 @@ print("Distance in AUs: ", distanceInAU)
 
 # Time for Round Trip radio communication in hours 
 # take inverse of speed of light (Raise to -1 power) and cancel distance with kilometers
-timeInHoursRadioCom = ((SPEED_OF_LIGHT_KILO_PER_HOUR ** -1) * distanceInKilo)
+timeInHoursRadioCom = ((SPEED_OF_LIGHT_KILO_PER_HOUR ** -1) * distanceInKilo) * 2
 print("Time in hours for round trip radio transmission: ", timeInHoursRadioCom)
 
 # Time For Round Trip radio comm in days
