@@ -16,7 +16,7 @@ numberOfDaysInt = float(input("How many days after 9/25/09? Please enter an inte
 
 # Distance in miles
 distanceInMiles = (numberOfDaysInt * VELOCITY_OF_TRAVEL_IN_MILES_PER_DAY) + MILES_FROM_THE_SUN_START
-print("Distance in Miles: ", distanceInMiles)
+print("Distance in Miles: ", distanceInMiles) 
 
 # Distance in kilometers
 distanceInKilo = distanceInMiles * KILO_PER_MILE
