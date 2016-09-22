@@ -5,20 +5,20 @@ Created on Sep 20, 2016
 '''
 print("Lab 2. Color Problem. Kyle Neuman")
 
-color1 = input("Please enter your first color\n")
+color1 = input("Please enter your first color\n").lower()
 colorlBool = color1 != "yellow" and color1 != "red" and color1 != "blue"
 
 while colorlBool:
     print("You have entered an invalid color\n")
-    color1 = input("Please enter your first color\n")
+    color1 = input("Please enter your first color\n").lower()
     colorlBool = color1 != "yellow" and color1 != "red" and color1 != "blue"
     
-color2 = input("Please enter your second color\n")
+color2 = input("Please enter your second color\n").lower()
 color2Bool = color2 != "yellow" and color2 != "red" and color2 != "blue"
 
 while color2Bool:
     print("You have entered an invalid color\n")
-    color2 = input("Please enter your second color\n")
+    color2 = input("Please enter your second color\n").lower()
     color2Bool = color2 != "yellow" and color2 != "red" and color2 != "blue"
 
 if color1 == "yellow" and color2 == "blue" or color2 == "yellow" and color1 == "blue":
@@ -31,7 +31,7 @@ elif color1 == "blue" and color2 == "red" or color2 == "blue" and color1 == "red
     print("Purple")
 
 else:
-    print("Error! You have entered an invalid color!\n")
+    print("Error! You have entered two of the same color!\n")
     
     
 
