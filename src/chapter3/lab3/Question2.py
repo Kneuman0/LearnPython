@@ -23,8 +23,9 @@ for vowel in vowels:
         if(index != -1):
             #increment each vowel found
             totalVowels += 1
-            # get substring 1 char ahead of index of last vowel
-            temp = temp[index + 1:]
+            # get substring 1 char ahead of index of last vowel if not last char in string
+            if index + 1 < len(temp):
+                temp = temp[index + 1:]
         
 print("There are {} vowels in that phrase".format(totalVowels))
                             
