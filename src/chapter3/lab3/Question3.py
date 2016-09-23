@@ -10,59 +10,46 @@ password = input("Please enter a password that has is at least 8 characters long
     "It should contain 1 uppercase,\n1 lowercase,\n1 number and\n1 special character\n")
 
 specialCharPresent = False
-for specialChar in string.punctuation:
-    if specialChar in password:
-        specialCharPresent = True
-        break
-    
 capitalLetter = False
-for capital in string.ascii_uppercase:
-    if capital in password:
-        capitalLetter = True
-        break
-    
 lowerCase = False
-for lowercase in string.ascii_lowercase:
-    if lowercase in password:
-        lowerCase = True
-        break
-
 numberPresent = False
-for number in string.digits:
-    if number in password:
-        numberPresent = True
-        break
+for char in password:
+    if char in string.ascii_lowercase:
+        lowerCase =True
     
-passwordOK = specialCharPresent and capitalLetter and lowerCase and numberPresent and len(password) > 7
+    if char in string.ascii_uppercase:
+        capitalLetter = True
+    
+    if char in string.digits:
+        numberPresent = True
+        
+    if char in string.punctuation:
+        specialCharPresent = True
+        
+passwordOK = specialCharPresent and capitalLetter and lowerCase and numberPresent and len(password) >= 8
 
 while not passwordOK:
 
     password = input("Invalid password, please try again")
+    
     specialCharPresent = False
-    for specialChar in string.punctuation:
-        if specialChar in password:
-            specialCharPresent = True
-            break
-    
     capitalLetter = False
-    for capital in string.ascii_uppercase:
-        if capital in password:
-            capitalLetter = True
-            break
-    
     lowerCase = False
-    for lowercase in string.ascii_lowercase:
-        if lowercase in password:
-            lowerCase = True
-            break
-
     numberPresent = False
-    for number in string.digits:
-        if number in password:
-            numberPresent = True
-            break
+    for char in password:
+        if char in string.ascii_lowercase:
+            lowerCase =True
     
-    passwordOK = specialCharPresent and capitalLetter and lowerCase and numberPresent and len(password) > 7
+        if char in string.ascii_uppercase:
+            capitalLetter = True
+    
+        if char in string.digits:
+            numberPresent = True
+        
+        if char in string.punctuation:
+            specialCharPresent = True
+    
+    passwordOK = specialCharPresent and capitalLetter and lowerCase and numberPresent and len(password) >= 8
     
 secondPassword = input("Please enter your password again")
 
