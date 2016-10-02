@@ -6,8 +6,25 @@ Created on Sep 22, 2016
 import string
 print("Lab 3. Password Problem. Kyle Neuman")
 
-password = input("Please enter a password that has is at least 8 characters long\n" \
+def main():
+    password = input("Please enter a password that has is at least 8 characters long\n" \
     "It should contain 1 uppercase,\n1 lowercase,\n1 number and\n1 special character\n")
+    
+    while not passwordCorrect(password):
+
+        password = input("Invalid password, please try again\n")
+    
+    
+    
+    secondPassword = input("Please enter your password again\n")
+
+    if secondPassword == password:
+        print("Password set!")
+    else:
+        print("Passwords do not match!\nProgram finished")
+        raise SystemExit
+
+
 
 def passwordCorrect(password):
     
@@ -43,17 +60,5 @@ def passwordCorrect(password):
     return specialCharPresent and capitalLetter and lowerCase and numberPresent and len(password) >= 8
 
 
-while not passwordCorrect(password):
-
-    password = input("Invalid password, please try again\n")
-    
-    
-    
-secondPassword = input("Please enter your password again\n")
-
-if secondPassword == password:
-    print("Password set!")
-else:
-    print("Passwords do not match!\nProgram finished")
-    raise SystemExit
+main()
 
