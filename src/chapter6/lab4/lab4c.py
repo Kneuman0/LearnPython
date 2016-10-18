@@ -25,21 +25,41 @@ def findPassword(fileName):
     counter = 0
     password = None
     passwordIndex = 0
-    
+     
     for line in buffer:
         tokens = line.split(" ")
-        
+         
         for index in range(len(tokens)):
             counter += 1
-            
+             
             if tokens[index] == "password":
                 password = tokens[index + 1]
                 passwordIndex = counter
-    
+     
     buffer.close()
     return password, passwordIndex, counter
-    
-        
+
+# ---------------- This works too --------------    
+# def findPassword(fileName):
+#     buffer = getBuffer(fileName)
+#     counter = 0
+#     password = None
+#     passwordIndex = 0
+#     paragraph = ""
+#     for line in buffer:
+#         paragraph += line
+#         
+#     words = paragraph.split()
+#     
+#     for index in range(len(words)):
+#         passwordIndex = index + 1
+#         counter += 1
+#         if words[index] == "password":
+#             password = words[index + 1]
+#      
+#     buffer.close()
+#     return password, passwordIndex, counter   
+
 main()            
             
             

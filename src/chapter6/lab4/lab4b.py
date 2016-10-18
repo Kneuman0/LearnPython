@@ -7,7 +7,7 @@ def main():
     fileName = input("Please enter a file name that you'd like to read from: ")
     total, counter, average = readData(fileName)
     print("There are were {} random numbers in the file.\nThe "  \
-    "total is: {}.\nThe average is: {}".format(counter, total, average))
+    "total is: {:.2f}.\nThe average is: {:.2f}".format(counter, total, average))
     
 def readData(fileName):
     buffer = openFile(fileName)
