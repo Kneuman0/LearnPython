@@ -9,7 +9,7 @@ def main():
     listOfNumber = getUserList()
     
     sortedList = sorted(listOfNumber)
-    sortedListDec = reversed(sortedList)
+    sortedListDec = list(reversed(sortedList))
     print ("Sorted List ascending: ", sortedList)
     print("Sorted list descending: ", sortedListDec)
     print("Smallest number: ", sortedList[0])
