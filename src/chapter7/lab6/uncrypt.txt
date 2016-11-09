@@ -1,0 +1,25 @@
+Other — 38 comments
+04
+Nov 16
+Did the Mirai Botnet Really Take Liberia Offline?
+
+KrebsOnSecurity received many a missive over the past 24 hours from readers who wanted to know why I’d not written about widespread media reports that Mirai — a malware strain made from hacked “Internet of Things” (IoT) devices such as poorly secured routers and IP cameras — was used to knock the entire country of Liberia offline. The trouble is, as far as I can tell no such nationwide outage actually occurred.
+
+First, a quick recap on Mirai: This blog was taken offline in September following a record 620 Gpbs attack launched by a Mirai botnet. The source code for Mirai was leaked online at the end of September. Since then, the code has been forked several times, resulting in the emergence of several large Mirai-based botnets. In late October, many of the Internet’s top destinations went offline for the better part of a day when Mirai was used to attack Internet infrastructure firm Dyn.
+
+Enter Kevin Beaumont, a security architect from Liverpool, England who on Thursday published a piece on Medium.com about an attack by Mirai against Liberia. Beaumont had been researching the output of an automated Twitter account set up by security researchers to monitor attacks from these various Mirai botnets. That Twitter account, @MiraiAttacks, burps out a tweet with each new Mirai attack, listing the targeted Internet address, the attack type, and the observed duration of the attack.
+
+Beamont’s story noted that a botnet based on Mirai was seen attacking the telecommunications infrastructure in the West African nation of Liberia. Citing anonymous sources, Beaumont said transit providers confirmed an attack of more than 500 Gpbs targeting Liberia’s lone underseas large-transit Internet cable, which Beaumont said “provides a single point of failure for internet access.”
+
+“From monitoring we can see websites hosted in country going offline during the attacks,” Beaumont wrote. “Additionally, a source in country at a Telco has confirmed to a journalist they are seeing intermittent internet connectivity, at times which directly match the attack. The attacks are extremely worrying because they suggest a Mirai operator who has enough capacity to seriously impact systems in a nation state.”
+
+Not long after Beamont’s story went live, a piece at The Hacker News breathlessly announced that hackers using Mirai had succeeded in knocking Liberia off the Internet. The Hacker News piece includes nifty graphics and images of Liberia’s underseas Internet cables. Soon after, ZDNet picked up the outage angle, as did the BBC and The Guardian and a host of other news outlets.
+A graphic The Hacker News used to explain Liberia's susceptibility to a DDoS attack.
+
+A graphic The Hacker News used to explain Liberia’s susceptibility to a DDoS attack.
+
+The only problem that I can see with these stories is that there does not appear to have been anything close to a country-wide outage as a result of this Mirai attack.
+
+Daniel Brewer, general manager for the Cable Consortium of Liberia, confirmed that his organization has fielded inquiries from news outlets and other interest groups following multiple media reports of a nationwide outage. But he could not point to the reason.
+
+“Both our ACE submarine cable monitoring systems and servers hosted (locally) in LIXP (Liberia Internet Exchange Point) show no downtime in the last 3 weeks,” Brewer said. “While it is likely that a local operator might have experienced a brief outage, we have no knowledge of a national Internet outage and there are no data to [substantiate] that.” 

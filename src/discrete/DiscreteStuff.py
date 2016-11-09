@@ -3,17 +3,14 @@ Created on Oct 18, 2016
 
 @author: Karottop
 '''
-import time
 MAX_VALUE = 999
 
 def main():
-    start = time.time()
-    calculationResults = dict()
+    calculationResults = {}
     for index in range(MAX_VALUE):
         answer = calculate(index)
         incrementSet(answer, calculationResults)
-    print(calculationResults)    
-    print("Execution Time: ", (time.time() - start) * 1000)    
+    print(calculationResults)      
 
 def reverse(integer):
     intInStr = str(integer).zfill(len(str(MAX_VALUE)))[::-1]
@@ -25,7 +22,7 @@ def calculate(integer1):
 
 def incrementSet(key, hashMap):
     if key in hashMap:
-        hashMap[key] = hashMap[key] + 1;  
+        hashMap[key] += 1;  
     else:
         hashMap[key] = 1;
         
